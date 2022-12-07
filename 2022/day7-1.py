@@ -7,7 +7,7 @@ with open("day7.data") as f:
         if tokens[0] == "$":
             if tokens[1] == "cd":
                 if tokens[2] == "/":
-                    currentDir == fileTree
+                    currentDir = fileTree
                 elif tokens[2] == "..":
                     currentDir = currentDir["parent"]
                 else:
